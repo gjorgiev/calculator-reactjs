@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Button from './Button';
-import Buttons from './Buttons';
 import './Calculator.css';
 import Display from './Display';
+import Keypad from './Keypad';
 
 class Calculator extends Component {
     constructor() {
@@ -20,7 +20,6 @@ class Calculator extends Component {
     }
 
     handleClick = e => {
-        console.log('clicked: ' + e.target.getAttribute('data-value'));
         const value = e.target.getAttribute('data-value');
         switch(value) {
             case 'clear':
@@ -37,7 +36,7 @@ class Calculator extends Component {
         return(
             <div className="Calculator">
                 <Display data={this.state.data}/>
-                <Buttons>
+                <Keypad>
                     <Button onClick={this.handleClick} label="C" value="clear" />
                     <Button onClick={this.handleClick} label="7" value="7" />
                     <Button onClick={this.handleClick} label="4" value="4" />
@@ -59,7 +58,7 @@ class Calculator extends Component {
                     <Button onClick={this.handleClick} label="-" value="-" />
                     <Button onClick={this.handleClick} label="+" size="2" value="+" />
                     <Button onClick={this.handleClick} label="=" size="2" value="equal" />
-                </Buttons>
+                </Keypad>
             </div>
         );
     }

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import "./Buttons.css";
+import "./Keypad.css";
 
-class Buttons extends Component {
+class Keypad extends Component {
     render(){
         return(
-            <div className="Buttons">
+            <div className="Keypad">
                 {/* We are using composition instead of inheritance.
                     read more: https://reactjs.org/docs/composition-vs-inheritance.html */}
                 {this.props.children}
@@ -13,4 +13,4 @@ class Buttons extends Component {
     }
 }
 
-export default Buttons;
+export default Keypad;
