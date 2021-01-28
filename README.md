@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Simple Calculator Web App Using React.JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This source code is part of the tutorials available on [medium](https://gjorgiev.medium.com/building-a-simple-calculator-using-react-js-ebbc4163dda3) and [dev.to](https://dev.to/gjorgiev/how-to-create-a-simple-calculator-web-app-using-react-js-4gc3)
 
 ## Available Scripts
 
